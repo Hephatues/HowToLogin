@@ -32,6 +32,7 @@ def register():
     global password
     global username_entry
     global password_entry
+    
     username = StringVar()
     password = StringVar()
     
@@ -57,12 +58,7 @@ def login():
     Label(screen2, text = "Please enter details below to login").pack()
     Label(screen2, text = "").pack()
 
-    global username_verify
-    global password_verify
-
-    username_verify = StringVar()
-    password_verify = StringVar()
-    
+       
     Label(screen2, text = "Username * ").pack()
     username_entry1 = Entry(screen2, textvariable = username_verify)
     username_entry1.pack()
